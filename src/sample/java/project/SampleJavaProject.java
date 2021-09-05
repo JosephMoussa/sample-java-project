@@ -74,4 +74,28 @@ public class SampleJavaProject implements Runnable {
             }
         } while (loop);
     }
+    
+    class MKeyListener extends KeyAdapter {
+ 
+    @Override
+    public void keyPressed(KeyEvent event) {
+ 
+  char ch = event.getKeyChar();
+ 
+        
+//exit the program
+        
+  if (ch == 'a') {
+ 
+System.out.println(event.getKeyChar());
+ 
+  }
+ 
+  if (event.getKeyCode() == KeyEvent.VK_HOME) {
+
+      System.exit(0);
+ 
+  }
+    }
+}
 }
